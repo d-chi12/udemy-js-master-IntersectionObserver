@@ -12,11 +12,11 @@ const cb = function(entries, observer) {
     // alert('intersecting');
 }
 
-// const options ={
-//     root: null,
-//     rootMargin: "300px 0px",
-//     threshold: [0, 0.5, 1]
-// };
+const options ={
+    root: null,
+    rootMargin: "300px 0px",
+    threshold: [0, 0.5, 1]
+};
 
 const io = new IntersectionObserver(cb);
 io.observe(child);
